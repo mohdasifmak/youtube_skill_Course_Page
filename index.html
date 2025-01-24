@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Skill Course</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Web Development Course</h1>
+    </header>
+
+    <main>
+        <!-- Course Overview Section -->
+        <section class="course-details">
+            <div class="course-overview">
+                <h1>Master Web Development</h1>
+                <p>
+                    <strong>Skill Level:</strong> Beginner<br>
+                    <strong>Duration:</strong> 15 hours<br>
+                    <strong>Total Videos:</strong> 25<br>
+                    <strong>Average Rating:</strong> <span id="average-rating">4.5</span>/5
+                </p>
+                <button id="enroll-button">Enroll Now</button>
+            </div>
+        
+            <div class="rating-section">
+                <h3>Rate the Course</h3>
+                <div id="rating-stars">
+                    <span data-rating="1" class="star">★</span>
+                    <span data-rating="2" class="star">★</span>
+                    <span data-rating="3" class="star">★</span>
+                    <span data-rating="4" class="star">★</span>
+                    <span data-rating="5" class="star">★</span>
+                </div>
+                <p id="user-rating-msg">Your rating will appear here.</p>
+            </div>
+        </section>
+        
+
+<!-- Video Player and Video List Section -->
+<section class="video-section">
+    <div class="video-container">
+        <!-- Video Player -->
+        <div class="video-player">
+            <iframe id="youtube-player" src="https://www.youtube.com/embed/mh45igK4Esw?si=0aSooe52TLhWHSQT" frameborder="0" allowfullscreen></iframe>
+            <div class="video-details">
+                <h2>Current Video: Introduction to Web Development</h2>
+                <p id="ai-summary">
+                    <strong>AI-Generated Summary:</strong> This video covers the basics of web development, including HTML, CSS, and JavaScript. It introduces foundational concepts for building websites.
+                </p>
+            </div>
+        </div>
+
+        <!-- Video List -->
+        <div class="video-list">
+            <h3>Video List</h3>
+            <ul id="video-cards">
+                <!-- Dummy Video Cards -->
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>01 - Introduction to Web Development</h4>
+                    <p>Duration: 10:45 | Views: 1,234,567</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>02 - Getting Started with HTML</h4>
+                    <p>Duration: 15:30 | Views: 987,654</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>03 - Understanding CSS Basics</h4>
+                    <p>Duration: 12:20 | Views: 567,123</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>04 - JavaScript Essentials</h4>
+                    <p>Duration: 18:00 | Views: 876,345</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>05 - Building Your First Website</h4>
+                    <p>Duration: 25:10 | Views: 1,000,234</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>06 - Advanced CSS Techniques</h4>
+                    <p>Duration: 22:30 | Views: 456,789</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>07 - Debugging JavaScript</h4>
+                    <p>Duration: 14:45 | Views: 321,654</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+                <li class="video-card" data-video-id="mh45igK4Esw">
+                    <h4>08 - Deploying Your Website</h4>
+                    <p>Duration: 19:50 | Views: 678,912</p>
+                    <label>
+                        <input type="checkbox" class="mark-complete"> Mark as Completed
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+        
+
+        <!-- Notes and Tools Section -->
+        <section class="notes-tools">
+            <h2>Notes</h2>
+            <textarea id="note-input" placeholder="Write your notes here..."></textarea>
+            <div class="notes-actions">
+                <button id="save-note">Save Note</button>
+                <button id="clear-notes">Clear All Notes</button>
+            </div>
+            <div class="saved-notes">
+                <h3>Saved Notes</h3>
+                <ul id="notes-list">
+                    <!-- Notes will appear here dynamically -->
+                </ul>
+            </div>
+            <h3>AI-Generated Questions</h3>
+            <ul>
+                <li>What is HTML?</li>
+                <li>What are the benefits of CSS for web styling?</li>
+            </ul>
+        </section>
+        
+        </section>
+
+        <!-- Additional Features -->
+        <section class="progress-tracker">
+            <h2>Progress Tracker</h2>
+            <div class="progress-bar">
+                <div class="progress" style="width: 30%;"></div>
+            </div>
+            <p>Completion: 30%</p>
+        </section>
+        
+        <section class="certificate">
+            <button id="download-certificate">Download Certificate</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Free Skill Courses</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
